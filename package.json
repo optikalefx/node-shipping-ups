@@ -1,0 +1,33 @@
+{
+  "name": "node-ups",
+  "version": "0.0.1",
+  "description": "UPS API bindings for Node.JS",
+  "author": {
+    "name": "uh-sem-blee, Co. | typefoo",
+    "email": "hello@typefoo.com"
+  },
+  "maintainers": [
+    {
+      "name": "jjosef",
+      "email": "john@typefoo.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typefoo/node-ups"
+  },
+  "main": "./lib/index.js",
+  "directories": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "soap": "~0.3.1",
+    "xml2js": "~0.4.1",
+    "request": "~2.31.0",
+    "extend": "~1.2.1",
+    "xmlbuilder": "~2.1.0",
+    "xml2json": "~0.3.2"
+  }
+}
