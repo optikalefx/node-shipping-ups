@@ -223,7 +223,7 @@ Pick a shipping rate
         postal_code: '44622'
       }
     },
-    packages: [
+    packages: [ // at least one package is required
       {
         weight: 10,
         description: 'My Package', // optional
