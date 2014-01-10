@@ -184,6 +184,7 @@ Pick a shipping rate
 
 ```js
   data = {
+    service_code: '03', // required for selected rate
     pickup_type: 'daily_pickup', // optional, can be: 'daily_pickup', 'customer_counter', 'one_time_pickup', 'on_call_air', 'suggested_retail_rates', 'letter_center', 'air_service_center'
     pickup_type_code: '02', // optional, overwrites pickup_type
     customer_classification: '00', // optional, need more details about what this does
@@ -250,7 +251,11 @@ Purchase a shipping label and tracking number
 
 ```js
   data = '1ZTRACKINGNUMBER';
+```
 
+OR
+
+```js
   data = {
     shipment_identification_number: '1ZSHIPMENTIDNUMBER',
     tracking_numbers: ['1ZTRACKINGNUMBER', '1ZTRACKINGNUMBER'] // optional
