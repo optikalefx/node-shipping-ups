@@ -28,6 +28,21 @@
   ups.rate(..., function(err, result) {
     ...
   });
+
+  // Generate a Digest for a specific Rate
+  ups.confirm(..., function(err, result) {
+    ...
+  });
+
+  // Purchase the Label
+  ups.accept(..., function(err, result) {
+    ...
+  });
+
+  // Void the Shipment
+  ups.void(..., function(err, result) {
+    ...
+  });
 ```
 
 See `example/index.js` for a working sample.
