@@ -17,6 +17,10 @@
     imperial: true // set to false for metric
   });
 
+  ups.time_in_transit(..., function(err, res) {
+    ...
+  });
+
   ups.address_validation(..., function(err, result) {
     ...
   });
