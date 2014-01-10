@@ -1,3 +1,5 @@
+'use strict';
+
 var upsAPI = require('../lib/index');
 var util = require('util');
 var fs = require('fs');
