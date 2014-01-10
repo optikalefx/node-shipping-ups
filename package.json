@@ -9,12 +9,12 @@
   "maintainers": [
     {
       "name": "jjosef",
-      "email": "john@typefoo.com"
+      "email": "john.josef@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/typefoo/node-ups"
+    "url": "https://github.com/typefoo/shipping-ups"
   },
   "main": "./lib/index.js",
   "directories": {},
