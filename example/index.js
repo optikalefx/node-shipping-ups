@@ -11,6 +11,20 @@ var ups = new upsAPI({
   password: 'UPSPASSWORD'
 });
 
+ups.address_validation({
+  name: 'Customer Name',
+  address_line_1: '123 Test Address',
+  city: 'Charlotte',
+  state_code: 'NC',
+  postal_code: '28205',
+  country_code: 'US'
+}, function(err, res) {
+  if(err) {
+    console.log(err);
+  }
+
+  console.log(util.inspect(res, {depth: null}));
+});
 
 ups.rates({
   shipper: {

@@ -17,12 +17,12 @@
     imperial: true // set to false for metric
   });
 
-  ups.track(..., function(err, result) {
-    if(err) {
-      console.log(err);
-    }
+  ups.address_validation(..., function(err, result) {
+    ...
+  });
 
-    console.log(result);
+  ups.track(..., function(err, result) {
+    ...
   });
 
   ups.rate(..., function(err, result) {
