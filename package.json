@@ -1,6 +1,6 @@
 {
   "name": "shipping-ups",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "UPS API bindings for Node.JS",
   "author": {
     "name": "uh-sem-blee, Co. | typefoo",
