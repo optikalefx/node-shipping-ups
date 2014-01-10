@@ -3,9 +3,9 @@ var util = require('util');
 
 var ups = new upsAPI({
   environment: 'sandbox', // or live
-  access_key: '4CC88F6EF47AD446',
-  username: 'typefoo',
-  password: 'a_{"R*{9;6+,%{)'
+  access_key: 'UPSACCESSKEY',
+  username: 'UPSUSERNAME',
+  password: 'UPSPASSWORD'
 });
 
 ups.rates({
