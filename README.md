@@ -13,7 +13,7 @@
     environment: 'sandbox', // or live
     username: 'UPSUSERNAME',
     password: 'UPSPASSWORD',
-    access_token: 'UPSACCESSTOKEN',
+    access_key: 'UPSACCESSTOKEN',
     imperial: true // set to false for metric
   });
 
