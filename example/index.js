@@ -124,18 +124,14 @@ ups.confirm({
   }
 
   //console.log(util.inspect(res, {depth: null}));
-  ups.accept({
-    shipment_digest: res.ShipmentDigest
-  }, function(err, res) {
+  ups.accept(res.ShipmentDigest, function(err, res) {
     if(err) {
       return console.log(err);
     }
 
     fs.writeFile('./label.gif', new Buffer(res.ShipmentResults.PackageResults.LabelImage.GraphicImage, "base64"), function(err) {
-      ups.void({
-        shipment_identification_number: res.ShipmentResults.ShipmentIdentificationNumber
-        //shipment_identification_number: '1Z12345E2318693258'
-      }, function(err, res) {
+      ups.void(res.ShipmentResults.ShipmentIdentificationNumber, function(err, res) {
+        // {shipment_identification_number: '1Z648616E192760718'}
         if(err) {
           return console.log(err);
         }
