@@ -1,5 +1,6 @@
 var upsAPI = require('../lib/index');
 var util = require('util');
+var fs = require('fs');
 
 var ups = new upsAPI({
   environment: 'sandbox', // or live
