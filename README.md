@@ -1,4 +1,4 @@
-#node-ups
+#shipping-ups
 
 ## Install
 
