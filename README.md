@@ -140,6 +140,7 @@ Get a list of shipping rates
       }
     },
     ship_to: {
+      name: 'John Doe', // optional
       company_name: 'Uhsem Blee',
       attention_name: '', // optional
       phone_number: '', // optional
@@ -201,6 +202,7 @@ Pick a shipping rate
       }
     },
     ship_to: {
+      name: 'John Doe', // optional
       company_name: 'Uhsem Blee',
       attention_name: '', // optional
       phone_number: '', // optional
