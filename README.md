@@ -165,6 +165,7 @@ Get a list of shipping rates
     },
     packages: [
       {
+        packaging_type: '02', // optional, packaging type code
         weight: 10,
         description: 'My Package', // optional
         delivery_confirmation_type: 2, // optional, 1 or 2
@@ -227,6 +228,7 @@ Pick a shipping rate
     },
     packages: [ // at least one package is required
       {
+        packaging_type: '02', // optional, packaging type code
         weight: 10,
         description: 'My Package', // optional
         delivery_confirmation_type: 2, // optional, 1 or 2
