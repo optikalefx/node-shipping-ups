@@ -3,4 +3,5 @@
 node_modules
 example/test.js
 label.gif
+label.html
 npm-debug.log

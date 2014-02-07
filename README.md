@@ -226,6 +226,9 @@ Pick a shipping rate
         postal_code: '44622'
       }
     },
+    services: [ // optional, you can specify which rates to look for
+      '03'
+    ],
     packages: [ // at least one package is required
       {
         packaging_type: '02', // optional, packaging type code
