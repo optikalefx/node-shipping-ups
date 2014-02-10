@@ -114,9 +114,15 @@ Validates an address
   }
 ```
 
-### track(tracking_number, callback)
+### track(tracking_number, [options], callback)
 
 Get a shipment's tracking information with `tracking_number` as the ID
+
+```js
+  options = {
+    latest: true // default false, will get only the latest tracking info, otherwise retrieves history
+  }
+```
 
 ### rate(data, callback)
 
@@ -145,9 +151,9 @@ Get a list of shipping rates
       attention_name: '', // optional
       phone_number: '', // optional
       address: {
-        address_line_1: '3456 Fake Address',
-        city: 'Charlotte',
-        state_code: 'NC',
+        address_line_1: '3456 Fake Address', // optional
+        city: 'Charlotte', // optional
+        state_code: 'NC', // optional, required for negotiated rates
         country_code: 'US',
         postal_code: '28205'
       }
@@ -163,6 +169,9 @@ Get a list of shipping rates
         postal_code: '44622'
       }
     },
+    services: [ // optional, you can specify which rates to look for -- for now only 1 works, working on multiple solution
+      '03'
+    ],
     packages: [
       {
         packaging_type: '02', // optional, packaging type code
@@ -226,9 +235,6 @@ Pick a shipping rate
         postal_code: '44622'
       }
     },
-    services: [ // optional, you can specify which rates to look for
-      '03'
-    ],
     packages: [ // at least one package is required
       {
         packaging_type: '02', // optional, packaging type code
