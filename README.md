@@ -169,7 +169,8 @@ Get a list of shipping rates
         postal_code: '44622'
       }
     },
-    services: [ // optional, you can specify which rates to look for -- for now only 1 works, working on multiple solution
+    service: '03' // optional, will rate this specific service.
+    services: [ // optional, you can specify which rates to look for -- performs multiple requests, so be careful not to do too many
       '03'
     ],
     packages: [
