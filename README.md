@@ -29,7 +29,7 @@
     ...
   });
 
-  ups.rate(..., function(err, result) {
+  ups.rates(..., function(err, result) {
     ...
   });
 
@@ -124,7 +124,7 @@ Get a shipment's tracking information with `tracking_number` as the ID
   }
 ```
 
-### rate(data, callback)
+### rates(data, callback)
 
 Get a list of shipping rates
 
